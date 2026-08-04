@@ -153,7 +153,7 @@ fifo_sync/
 ├── synthesis/
 │   └── dc_script.tcl
 │
-├── physical_design/
+├── PD_scripts/
 │   ├── 01_setup.tcl
 │   ├── 02_netlist_read.tcl
 │   ├── 03_floorplan.tcl
