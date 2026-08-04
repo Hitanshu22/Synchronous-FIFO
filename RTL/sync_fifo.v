@@ -2,7 +2,7 @@
 // Synchronous FIFO - Optimized for RTL-to-GDS
 //=========================================================
 
-module fifoo #(
+module fifo #(
     parameter DEPTH     = 16,
     parameter WIDTH     = 8,
     parameter PTR_WIDTH = 4
