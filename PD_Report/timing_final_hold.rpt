@@ -1,0 +1,713 @@
+[icc2-lic Fri Jul 10 12:18:40 2026] Command 'report_timing' requires licenses
+[icc2-lic Fri Jul 10 12:18:40 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Fri Jul 10 12:18:40 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Fri Jul 10 12:18:40 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Jul 10 12:18:40 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Jul 10 12:18:40 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Jul 10 12:18:40 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 20
+        -report_by design
+        -input_pins
+Design : fifo_sync
+Version: W-2024.09
+Date   : Fri Jul 10 12:18:40 2026
+****************************************
+
+  Startpoint: wr_ptr_reg[2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: wr_ptr_reg[2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  wr_ptr_reg[2]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  wr_ptr_reg[2]/QN (DFFX1_RVT)                     0.07      0.11 f
+  ctmTdsLR_2_978/A3 (OA22X1_RVT)                   0.00      0.11 f
+  ctmTdsLR_2_978/Y (OA22X1_RVT)                    0.04      0.15 f
+  ctmTdsLR_1_977/A (INVX0_RVT)                     0.00      0.15 f
+  ctmTdsLR_1_977/Y (INVX0_RVT)                     0.01      0.16 r
+  wr_ptr_reg[2]/D (DFFX1_RVT)                      0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  wr_ptr_reg[2]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: wr_toggle_f_reg (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: wr_toggle_f_reg (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  wr_toggle_f_reg/CLK (DFFX1_RVT)                  0.00      0.04 r
+  wr_toggle_f_reg/Q (DFFX1_RVT)                    0.08      0.13 r
+  ctmTdsLR_4_84/A1 (OA21X1_RVT)                    0.00      0.13 r
+  ctmTdsLR_4_84/Y (OA21X1_RVT)                     0.04      0.16 r
+  wr_toggle_f_reg/D (DFFX1_RVT)                    0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  wr_toggle_f_reg/CLK (DFFX1_RVT)                  0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: rdata_o_reg[5] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: rdata_o_reg[5] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  rdata_o_reg[5]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  rdata_o_reg[5]/Q (DFFX1_RVT)                     0.08      0.12 f
+  U709/A2 (AO22X1_RVT)                             0.00      0.12 f
+  U709/Y (AO22X1_RVT)                              0.04      0.16 f
+  rdata_o_reg[5]/D (DFFX1_RVT)                     0.00      0.16 f
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  rdata_o_reg[5]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: rdata_o_reg[0] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: rdata_o_reg[0] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  rdata_o_reg[0]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  rdata_o_reg[0]/Q (DFFX1_RVT)                     0.08      0.12 f
+  U624/A2 (AO22X1_RVT)                             0.00      0.12 f
+  U624/Y (AO22X1_RVT)                              0.04      0.16 f
+  rdata_o_reg[0]/D (DFFX1_RVT)                     0.00      0.16 f
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  rdata_o_reg[0]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: rdata_o_reg[4] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: rdata_o_reg[4] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  rdata_o_reg[4]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  rdata_o_reg[4]/Q (DFFX1_RVT)                     0.08      0.12 f
+  U692/A2 (AO22X1_RVT)                             0.00      0.12 f
+  U692/Y (AO22X1_RVT)                              0.04      0.16 f
+  rdata_o_reg[4]/D (DFFX1_RVT)                     0.00      0.16 f
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  rdata_o_reg[4]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: rdata_o_reg[6] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: rdata_o_reg[6] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  rdata_o_reg[6]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  rdata_o_reg[6]/Q (DFFX1_RVT)                     0.08      0.12 f
+  U554/A2 (AO22X1_RVT)                             0.00      0.12 f
+  U554/Y (AO22X1_RVT)                              0.04      0.16 f
+  rdata_o_reg[6]/D (DFFX1_RVT)                     0.00      0.16 f
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  rdata_o_reg[6]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: rdata_o_reg[2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: rdata_o_reg[2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  rdata_o_reg[2]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  rdata_o_reg[2]/Q (DFFX1_RVT)                     0.09      0.12 f
+  U658/A2 (AO22X1_RVT)                             0.00      0.12 f
+  U658/Y (AO22X1_RVT)                              0.04      0.16 f
+  rdata_o_reg[2]/D (DFFX1_RVT)                     0.00      0.16 f
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  rdata_o_reg[2]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[5][2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[5][2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[5][2]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[5][2]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U448/A1 (MUX21X1_RVT)                            0.00      0.12 r
+  U448/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[5][2]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[5][2]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[4][0] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[4][0] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.03      0.03
+
+  mem_reg[4][0]/CLK (DFFX1_RVT)                    0.00      0.03 r
+  mem_reg[4][0]/Q (DFFX1_RVT)                      0.08      0.11 r
+  U394/A2 (MUX21X1_RVT)                            0.00      0.11 r
+  U394/Y (MUX21X1_RVT)                             0.04      0.15 r
+  mem_reg[4][0]/D (DFFX1_RVT)                      0.00      0.15 r
+  data arrival time                                          0.15
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[4][0]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[4][2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[4][2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[4][2]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[4][2]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U391/A2 (MUX21X1_RVT)                            0.00      0.12 r
+  U391/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[4][2]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[4][2]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[4][5] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[4][5] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.03      0.03
+
+  mem_reg[4][5]/CLK (DFFX1_RVT)                    0.00      0.03 r
+  mem_reg[4][5]/Q (DFFX1_RVT)                      0.08      0.11 r
+  U392/A2 (MUX21X1_RVT)                            0.00      0.11 r
+  U392/Y (MUX21X1_RVT)                             0.04      0.15 r
+  mem_reg[4][5]/D (DFFX1_RVT)                      0.00      0.15 r
+  data arrival time                                          0.15
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[4][5]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[7][4] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[7][4] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[7][4]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[7][4]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U350/A1 (MUX21X1_RVT)                            0.00      0.12 r
+  U350/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[7][4]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[7][4]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[0][4] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[0][4] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[0][4]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[0][4]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U537/A2 (MUX21X1_RVT)                            0.00      0.12 r
+  U537/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[0][4]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[0][4]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[12][2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[12][2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[12][2]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  mem_reg[12][2]/Q (DFFX1_RVT)                     0.08      0.12 r
+  U397/A2 (MUX21X1_RVT)                            0.00      0.12 r
+  U397/Y (MUX21X1_RVT)                             0.04      0.16 r
+  mem_reg[12][2]/D (DFFX1_RVT)                     0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[12][2]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[3][6] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[3][6] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.03      0.03
+
+  mem_reg[3][6]/CLK (DFFX1_RVT)                    0.00      0.03 r
+  mem_reg[3][6]/Q (DFFX1_RVT)                      0.08      0.11 r
+  U341/A1 (MUX21X1_RVT)                            0.00      0.11 r
+  U341/Y (MUX21X1_RVT)                             0.04      0.15 r
+  mem_reg[3][6]/D (DFFX1_RVT)                      0.00      0.15 r
+  data arrival time                                          0.15
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[3][6]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[11][3] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[11][3] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[11][3]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  mem_reg[11][3]/Q (DFFX1_RVT)                     0.08      0.11 r
+  U358/A1 (MUX21X1_RVT)                            0.00      0.11 r
+  U358/Y (MUX21X1_RVT)                             0.04      0.16 r
+  mem_reg[11][3]/D (DFFX1_RVT)                     0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[11][3]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[3][2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[3][2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[3][2]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[3][2]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U345/A1 (MUX21X1_RVT)                            0.00      0.12 r
+  U345/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[3][2]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[3][2]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[5][0] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[5][0] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.03      0.03
+
+  mem_reg[5][0]/CLK (DFFX1_RVT)                    0.00      0.03 r
+  mem_reg[5][0]/Q (DFFX1_RVT)                      0.08      0.11 r
+  U450/A1 (MUX21X1_RVT)                            0.00      0.11 r
+  U450/Y (MUX21X1_RVT)                             0.04      0.15 r
+  mem_reg[5][0]/D (DFFX1_RVT)                      0.00      0.15 r
+  data arrival time                                          0.15
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[5][0]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.15
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[1][2] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[1][2] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[1][2]/CLK (DFFX1_RVT)                    0.00      0.04 r
+  mem_reg[1][2]/Q (DFFX1_RVT)                      0.08      0.12 r
+  U464/A1 (MUX21X1_RVT)                            0.00      0.12 r
+  U464/Y (MUX21X1_RVT)                             0.04      0.17 r
+  mem_reg[1][2]/D (DFFX1_RVT)                      0.00      0.17 r
+  data arrival time                                          0.17
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.05      0.05
+  mem_reg[1][2]/CLK (DFFX1_RVT)                    0.00      0.05 r
+  clock uncertainty                                0.10      0.15
+  library hold time                               -0.00      0.15
+  data required time                                         0.15
+  ------------------------------------------------------------------------
+  data required time                                         0.15
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+
+  Startpoint: mem_reg[14][6] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: mem_reg[14][6] (rising edge-triggered flip-flop clocked by CLK)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: CLK
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+
+  mem_reg[14][6]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  mem_reg[14][6]/Q (DFFX1_RVT)                     0.08      0.12 r
+  U713/A1 (MUX21X1_RVT)                            0.00      0.12 r
+  U713/Y (MUX21X1_RVT)                             0.04      0.16 r
+  mem_reg[14][6]/D (DFFX1_RVT)                     0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.04      0.04
+  mem_reg[14][6]/CLK (DFFX1_RVT)                   0.00      0.04 r
+  clock uncertainty                                0.10      0.14
+  library hold time                               -0.00      0.14
+  data required time                                         0.14
+  ------------------------------------------------------------------------
+  data required time                                         0.14
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.02
+
+
+1

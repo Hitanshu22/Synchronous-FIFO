@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : fifo_sync
+Version: W-2024.09
+Date   : Fri Jul 10 12:18:40 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |      16 |     5 |       8  ( 0.28%) |       1
+H routing |       7 |     2 |       6  ( 0.42%) |       1
+V routing |       9 |     5 |       2  ( 0.14%) |       1
+
+1
