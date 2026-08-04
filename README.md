@@ -164,13 +164,13 @@ fifo_sync/
 │   └── 08_outputs.tcl
 │
 ├── Outputs/
-│   ├── synthesis_result.jpeg
-│   ├── floorplan.jpeg
-│   ├── Powerplanning_&_placement.jpeg
-│   ├── Routing.jpg
-│   ├── verdi_block_diagram.jpeg
-│   ├── verdi_gate_level_schematic.jpeg
-│   └── verdi_timing_waveform.jpeg
+│   ├── synthesis_result.png
+│   ├── floorplan.png
+│   ├── Powerplanning_&_placement.png
+│   ├── Routing.png
+│   ├── verdi_block_diagram.png
+│   ├── verdi_gate_level_schematic.png
+│   └── verdi_timing_waveform.png
 │
 ├── PD_reports/
 │   ├── check_design_pre_place.rpt
