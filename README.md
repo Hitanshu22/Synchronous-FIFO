@@ -7,8 +7,8 @@ This project demonstrates a complete **ASIC design flow** for a **Synchronous FI
 ## Project Overview
 
 - **Design:** Synchronous FIFO (top module: `fifo_sync`)
-- **Depth:** [FILL — e.g. 16]
-- **Data Width:** [FILL — e.g. 8 bits]
+- **Depth:** 16 bits
+- **Data Width:** 8 bits
 - **Inputs:** wr_en_i, rd_en_i, data_in[WIDTH-1:0], CLK, reset
 - **Outputs:** data_out[WIDTH-1:0], full, empty, wr_error_o, rd_error_o
 - **RTL Language:** Verilog HDL
